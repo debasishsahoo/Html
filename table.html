@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<style>
+table {
+ width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size:25px
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+	</style>
+	</head>
+	<body>
+		<table id="t01">
+			<tbody>
+				<tr>
+					<th style="width:280px">Path</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>&lt;img src="picture.jpg"&gt;</td>
+					<td>The "picture.jpg" file is located in the same folder as the current page</td>
+				</tr>
+				<tr>
+					<td>&lt;img src="images/picture.jpg"&gt;</td>
+					<td>The "picture.jpg" file is located in the images folder in the current folder</td>
+				</tr>
+				<tr>
+					<td>&lt;img src="/images/picture.jpg"&gt;</td>
+					<td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+				</tr>
+				<tr>
+					<td>&lt;img src="../picture.jpg"&gt;</td>
+					<td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
